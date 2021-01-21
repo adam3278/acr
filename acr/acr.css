@@ -1,0 +1,183 @@
+body.acr_cscheme1, body.acr_cscheme1::before, body.acr_cscheme1 *, body.acr_cscheme1 ::before {
+    color: white !important;
+    background-color: black !important;
+    background-image: none !important;
+    border-color: white !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+body.acr_cscheme2, body.acr_cscheme2::before, body.acr_cscheme2 *, body.acr_cscheme2 ::before {
+    color: yellow !important;
+    background-color: black !important;
+    background-image: none !important;
+    border-color: yellow !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+body.acr_cscheme3, body.acr_cscheme3::before, body.acr_cscheme3 *, body.acr_cscheme3 ::before {
+    color: black !important;
+    background-color: white !important;
+    background-image: none !important;
+    border-color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+body.acr_font1 {
+    font-size: 1.8em !important;
+    word-break: break-word;
+}
+
+body.acr_font2 {
+    font-size: 2.4em !important;
+    word-break: break-word;
+}
+
+body.acr_cscheme1 .acr_exclusion.cs1_visibility {
+    background: white !important;
+    border-radius: 0.4em;
+}
+
+body.acr_cscheme2 .acr_exclusion.cs2_visibility {
+    background: yellow !important;
+    border-radius: 0.4em;
+}
+
+body.acr_cscheme3 .acr_exclusion.cs3_visibility {
+    background: black !important;
+    border-radius: 0.4em;
+}
+
+#acr_button {
+    position: fixed;
+    right: 0;
+    bottom: calc(4% - 2px);
+    width: calc(5vh - 4px);
+    min-width: 15px;
+    height: calc(5vh - 4px);
+    min-height: 15px;
+    background: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 172 172'%3E%3Cg fill='none' fill-rule='nonzero' stroke='none' stroke-width='1' stroke-linecap='butt' stroke-linejoin='miter' stroke-miterlimit='10' stroke-dasharray='' stroke-dashoffset='0' font-family='none' font-weight='none' font-size='none' text-anchor='none' style='mix-blend-mode: normal'%3E%3Cpath d='M0,172v-172h172v172z' fill='none'%3E%3C/path%3E%3Cg fill='%23ffffff'%3E%3Cpath d='M93.16667,14.33333c-7.91608,0 -14.33333,6.41725 -14.33333,14.33333c0,7.91608 6.41725,14.33333 14.33333,14.33333c7.91608,0 14.33333,-6.41725 14.33333,-14.33333c0,-7.91608 -6.41725,-14.33333 -14.33333,-14.33333zM89.58333,57.33333c-9.89717,0 -17.91667,8.0195 -17.91667,17.91667v25.08333c0,7.38593 5.60348,13.39449 12.77962,14.17936c0.51075,0.10775 1.03175,0.15938 1.55371,0.15397h31.41015l12.34571,24.70541c1.14492,2.29081 3.42512,3.7967 5.98151,3.95028c2.55638,0.15359 5.00048,-1.06846 6.41143,-3.20572c1.41096,-2.13726 1.57437,-4.86495 0.42867,-7.15537l-14.33333,-28.66667c-1.21433,-2.42793 -3.69614,-3.96145 -6.41081,-3.96126h-14.33333v-25.08333c0,-9.89717 -8.0195,-17.91667 -17.91667,-17.91667zM50.30664,78.93132c-1.61148,-0.01083 -3.17959,0.52174 -4.45117,1.51172c-10.34032,7.8066 -17.1888,20.2205 -17.1888,34.22364c0,23.66165 19.33835,43 43,43c14.00314,0 26.41704,-6.84849 34.22364,-17.18881c1.67143,-2.03361 2.09362,-4.81979 1.0997,-7.25728c-0.99393,-2.43749 -3.24401,-4.134 -5.86089,-4.41898c-2.61688,-0.28498 -5.17939,0.88745 -6.67468,3.05387c-5.26541,6.97435 -13.42757,11.47786 -22.78776,11.47786c-15.91268,0 -28.66667,-12.75398 -28.66667,-28.66667c0,-9.3602 4.50351,-17.52235 11.47786,-22.78776c2.48987,-1.82528 3.53119,-5.03981 2.58451,-7.97833c-0.94668,-2.93852 -3.66862,-4.94067 -6.75574,-4.96925z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E") blue center no-repeat !important;
+    background-size: 80% auto;
+    border-top: 2px #ffffff solid;
+    border-left: 2px #ffffff solid;
+    border-bottom: 2px #ffffff solid;
+    border-top-left-radius: 0.3em;
+    border-bottom-left-radius: 0.3em;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#acr_panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 16, 20, 0.7);
+    z-index: 9999;
+}
+
+#acr_panel div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 52%;
+    min-height: 44vh;
+    max-height: 90vh;
+    background-color: #f2f2f2;
+    padding: 3vh 4%;
+    border-radius: 0.3em;
+    font-family: sans-serif, "Ubuntu";
+    overflow: auto;
+}
+
+#acr_panel div > span {
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    width: 3vh;
+    height: 3vh;
+    background: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 50 50' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:2;'%3E%3Cg transform='matrix(0.799338,-0.799338,0.799338,0.799338,-14.9669,25)'%3E%3Cg transform='matrix(8.53542e-17,-1.39394,0.833333,5.10269e-17,13.3333,60.5455)'%3E%3Crect x='9' y='11' width='33' height='6' style='fill:rgb(38,40,47);stroke:rgb(38,40,47);stroke-width:1.1px;'/%3E%3C/g%3E%3Cg transform='matrix(1.39394,0,0,0.833333,-10.5455,13.3333)'%3E%3Crect x='9' y='11' width='33' height='6' style='fill:rgb(38,40,47);stroke:rgb(38,40,47);stroke-width:1.1px;'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") transparent center no-repeat !important;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+body.acr_cscheme1 #acr_panel div > span, body.acr_cscheme2 #acr_panel div > span {
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+#acr_panel div > strong {
+    max-width: 100%;
+    margin: 0 0 1vh 0;
+    font-size: xx-large;
+    text-align: center;
+}
+
+#acr_panel div p {
+    margin: 3vh 0 2vh 0;
+    font-size: x-large;
+}
+
+#acr_panel div section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 2vh 3%;
+    border: 1px solid #131014;
+    border-radius: 0.4em;
+}
+
+#acr_panel div section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    min-width: 200px;
+    background-color: rgba(6, 2, 37, 0.8);
+    margin: 1vh 2vh;
+    padding: 1vh;
+    border-radius: 0.4em;
+    font-size: 1.3em;
+    color: #f2f2f2;
+    cursor: pointer;
+}
+
+#acr_panel div section p.blackwhite {
+    background-color: black;
+    color: white;
+}
+
+#acr_panel div section p.blackyellow {
+    background-color: black;
+    color: yellow;
+}
+
+#acr_panel div section p.whiteblack {
+    background-color: white;
+    color: black;
+}
+
+#acr_panel div section p.large {
+    font-size: 2em;
+}
+
+#acr_panel div section p.biglarge {
+    font-size: 3em;
+}
+
+#acr_panel div a {
+    margin: 3vh 0 0 0;
+    font-size: larger;
+}
