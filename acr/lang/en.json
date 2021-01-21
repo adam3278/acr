@@ -1,0 +1,20 @@
+{
+  "panel": {
+    "title": "Accessibility Menu",
+    "cscheme": {
+      "title": "Color scheme",
+      "standard": "Standard",
+      "blackwhite": "Black-white",
+      "blackyellow": "Black-yellow",
+      "whiteblack": "White-black"
+    },
+    "font": {
+      "title": "Font",
+      "standard": "Standard",
+      "large": "Large",
+      "biglarge": "Big large"
+    },
+    "credicts": "Powered by ACR®",
+    "close": "Close"
+  }
+}
